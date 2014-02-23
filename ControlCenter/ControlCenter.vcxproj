@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7ED50B77-973C-409E-AFDF-27724361698F}</ProjectGuid>
+    <RootNamespace>ControlCenter</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControlCenter.h" />
+    <ClInclude Include="ControlCenterDlg.h" />
+    <ClInclude Include="ControlDlg.h" />
+    <ClInclude Include="DoorSock.h" />
+    <ClInclude Include="FullScreenOpDlg.h" />
+    <ClInclude Include="GroupChooseDlg.h" />
+    <ClInclude Include="GroupNameDlg.h" />
+    <ClInclude Include="HandDlg.h" />
+    <ClInclude Include="ListenSock.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MonitorSession.h" />
+    <ClInclude Include="MonitorSessionDlg.h" />
+    <ClInclude Include="MonitorViewerDlg.h" />
+    <ClInclude Include="NewMonitorSessionDlg.h" />
+    <ClInclude Include="NewShareSessionDlg.h" />
+    <ClInclude Include="PeerTreeDlg.h" />
+    <ClInclude Include="rdpviewer1.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Service.h" />
+    <ClInclude Include="SettingDlg.h" />
+    <ClInclude Include="ShareSession.h" />
+    <ClInclude Include="ShareSessionDlg.h" />
+    <ClInclude Include="SockCommand.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TrayIcon.h" />
+    <ClInclude Include="ViewerCtrl.h" />
+    <ClInclude Include="ViewerDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ControlCenter.cpp" />
+    <ClCompile Include="ControlCenterDlg.cpp" />
+    <ClCompile Include="ControlDlg.cpp" />
+    <ClCompile Include="DoorSock.cpp" />
+    <ClCompile Include="FullScreenOpDlg.cpp" />
+    <ClCompile Include="GroupChooseDlg.cpp" />
+    <ClCompile Include="GroupNameDlg.cpp" />
+    <ClCompile Include="HandDlg.cpp" />
+    <ClCompile Include="ListenSock.cpp" />
+    <ClCompile Include="MonitorSession.cpp" />
+    <ClCompile Include="MonitorSessionDlg.cpp" />
+    <ClCompile Include="MonitorViewerDlg.cpp" />
+    <ClCompile Include="NewMonitorSessionDlg.cpp" />
+    <ClCompile Include="NewShareSessionDlg.cpp" />
+    <ClCompile Include="PeerTreeDlg.cpp" />
+    <ClCompile Include="rdpviewer1.cpp" />
+    <ClCompile Include="Service.cpp" />
+    <ClCompile Include="SettingDlg.cpp" />
+    <ClCompile Include="ShareSession.cpp" />
+    <ClCompile Include="ShareSessionDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TrayIcon.cpp" />
+    <ClCompile Include="ViewerCtrl.cpp" />
+    <ClCompile Include="ViewerDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ControlCenter.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ControlCenter.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ControlCenter.ico" />
+    <Image Include="res\group.ico" />
+    <Image Include="res\offlinePeer.ico" />
+    <Image Include="res\peer.ico" />
+    <Image Include="res\started.ico" />
+    <Image Include="res\stopped.ico" />
+    <Image Include="res\world.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ControlCenter.rc" _x007B_32BE5ED2-5C86-480F-A914-0FF8885A1B3F_x007D_="CRdpviewer1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
